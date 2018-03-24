@@ -1,14 +1,19 @@
 {
   "name": "console-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "console.log with css",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heroor/console.css.git"
+  },
   "author": "heroor",
   "license": "ISC",
-  "dependencies": {
-    "console.img": "^2.0.3"
-  }
+  "bugs": {
+    "url": "https://github.com/Heroor/console.css/issues"
+  },
+  "homepage": "https://github.com/Heroor/console.css#readme"
 }
