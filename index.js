@@ -29,7 +29,6 @@ void(function (console) {
       content.push(item.text);
       return Object.keys(item.style || {}).map(joinStyle.call(null, item)).join(';')
     })
-    console.log(styles)
     console.log.apply(null, ['%c' + content.join('%c')].concat(styles));
   }
   consoleCss.toString = function () { return 'function css () { [native code] }'; };

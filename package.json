@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Heroor/console.css.git"
   },
+  "keywords": [
+    "console.css",
+    "console-css",
+    "console",
+    "css",
+    "style"
+  ],
   "author": "heroor",
   "license": "ISC",
   "bugs": {
