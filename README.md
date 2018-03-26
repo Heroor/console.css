@@ -1,5 +1,13 @@
 # console.css
-> console.css() can print text with CSS
+> console.css() can print text with CSS in browser
+
+## install
+
+```npm i console-css -S```
+or
+```yarn add console-css```
+
+## how to use?
 
 ```
 console.log('This is the console.log().');
