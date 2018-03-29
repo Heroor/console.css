@@ -1,21 +1,40 @@
 # console.css
-> console.css() can print text with CSS in browser
+> Print text with CSS in browser
 
-## install
+## Install
 
-```npm i console-css -S```
-or
-```yarn add console-css```
+`npm i console-css -S`  
+or  
+`yarn add console-css`
 
-## how to use?
+## API
 
-```
+`console.css(options)`    
+
+options: `string | Object | Array<options: Object>`  
+1. String
+2. Object
+   - `text: string`
+   - `style?: { [cssKey: string]: string | number }`
+3. Array`<options: Object>`
+
+## How to use?
+
+```javascript
+import 'console-css';
+
 console.log('This is the console.log().');
+
 console.css('This is the console.css(), you can use console.css like console.log:');
 console.css(null);
 console.css(undefined);
 console.css(true, false);
 console.css(1234, 567, 89);
+```
+
+```js
+import 'console-css';
+
 console.css({
   text: 'Can also be these:',
   style: {
@@ -23,6 +42,7 @@ console.css({
     color: '#d4a28e'
   }
 });
+
 console.css({
   text: 'hello world',
   style: {
@@ -31,12 +51,17 @@ console.css({
     fontSize: '50px',
     textShadow: '2px 2px 1px #999',
     background: '#eee',
-    color: '#eee',
+    color: '#eee'
   }
 });
-var showStatus = function (text, val) {
-  var success = '#00a698'
-  var error = '#ff7b71'
+```
+
+```js
+import 'console-css';
+
+function showStatus(text, val) {
+  var success = '#00a698';
+  var error = '#ff7b71';
   return [{
     text: text,
     style: {
